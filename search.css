@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf6f9;
+    color: #0a2f43;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eaf6f9;
+}
+
+nav {
+    background-color: #0a2f43;
+    color: #eaf6f9;
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-size: 28px;
+}
+
+nav .icons {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #eaf6f9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #99e6ff;
+}
+
+h1 {
+    font-size: 34px;
+    margin: 50px 30px 20px 30px;
+}
+
+form {
+    padding: 0 30px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 2px solid #0a2f43;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #0a2f43;
+}
+
+button.btn {
+    font-size: 16px;
+    padding: 12px 12px;
+    background-color: #0a2f43;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #004d73;
+}
+
+.results {
+    margin: 40px 30px;
+}
+
+h4 {
+    font-size: 23px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.card {
+    padding-left: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #0a2f43;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    font-size: 17.5px;
+    line-height: 1.8;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.card.message {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 30px;
+    border-left: 6px solid #d9534f; /* red highlight */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+}
+.card.message h3 {
+    font-size: 26px;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+.card.message p {
+    margin-bottom: 10px;
+}
+/* For styling the 'no results' message */
+.card.message {
+    text-align: center;
+    border-left: 6px solid #17a2b8; /* A nice info-blue color */
+}
+
+.card.message h3 {
+    font-size: 24px;
+    color: #0a2f43;
+    margin-bottom: 10px;
+}

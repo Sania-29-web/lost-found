@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf6f9;
+    color: #0a2f43;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eaf6f9;
+}
+
+/* --- SHARED STYLES --- */
+nav {
+    background-color: #0a2f43;
+    color: #eaf6f9;
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h2 { font-size: 28px; }
+nav .icons {
+    display: flex;
+    gap: 30px; /* Yeh line links ke beech mein space add karegi */
+}
+nav a { color: #eaf6f9; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+nav a:hover { color: #99e6ff; }
+
+
+/* --- STYLES SPECIFICALLY FOR THE FORM CONTAINER --- */
+.form-wrapper h1 {
+    padding: 30px 40px 15px 40px;
+    display: flex;
+    justify-content: center;
+}
+.form-wrapper form {
+    padding-left: 15px;
+}
+.form-wrapper form a {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+    color: #15414C;
+}
+.form-wrapper input {
+    border-color: #15414C;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #F8FDF1;
+    margin: 9px;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    width: 75%;
+}
+.form-wrapper input[type="date"],
+.form-wrapper input[type="file"] {
+    width: auto;
+    padding: 7px;
+}
+.form-wrapper button.btn {
+    font-size: 15px;
+    padding: 10px 10px;
+    background-color: #0a2f43;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-wrapper button.btn:hover {
+    background-color: #004d73;
+}
+
+
+/* --- STYLES FOR THE RESULTS CARDS CONTAINER --- */
+.results-wrapper .card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 40px;
+    border-left: 6px solid #0a2f43;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    font-size: 17.5px;
+    line-height: 1.8;
+}
+.results-wrapper .card h3 {
+    font-size: 22px;
+    color: #0a2f43;
+}
+.results-wrapper .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+/* --- SHARED STYLES --- */
+.error-box {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    margin: 20px 40px;
+    border-radius: 8px;
+}
+.error-box h4 { margin-top: 0; }
+.error-box ul { margin-bottom: 0; padding-left: 20px; }

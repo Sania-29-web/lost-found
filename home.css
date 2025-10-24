@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf6f9;
+    color: #0a2f43;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eaf6f9;
+}
+
+nav {
+    background-color: #0a2f43;
+    color: #eaf6f9;
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-size: 28px;
+}
+
+nav .icons {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #eaf6f9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #99e6ff;
+}
+section {
+    background-color: #FFFFF3;
+    padding: 90px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content h1 {
+    font-size: 50px;
+    color: #154047;
+    margin-bottom: 15px;
+}
+.content h4 {
+    font-size: 20px;
+    color: #2C5A60;
+}
+
+data {
+    display: block;
+    padding: 40px;
+}
+data h3 {
+    font-size: 28px;
+    color: #183D4B;
+    margin-bottom: 30px;
+}
+
+/* Items grid */
+.items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.items a {
+    background-color: #F8FDF1;
+    border-radius: 12px;
+    color: #1F3C48;
+    width: 275px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.items a:hover {
+    transform: translateY(-5px);
+    background-color: #e8f5e3;
+}
+.items img {
+    width: 130px;
+    height: 180px;
+    margin-bottom: 10px;
+}
